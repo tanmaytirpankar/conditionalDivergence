@@ -22,13 +22,12 @@
 #include <iomanip>
 using namespace std;
 
-void myFunc(double f, float a, float b) {
-  cout << setprecision(17) << "f: " << f << endl;
-  cout << setprecision(8) << "a: " << a << endl;
-  cout << setprecision(8) << "b: " << b << endl;
-  cout << setprecision(8) << "a+b: " << a+b << endl;
+void myFunc(float f, float a, double b) {
+  cout << setprecision(8) << "f: " << f << endl;
+  cout << setprecision(17) << "a: " << a << endl;
+  cout << setprecision(17) << "b: " << b << endl;
+  cout << setprecision(18) << "a+b: " << a+b << endl;
 
-  // Change the f to d to see the control flow change
   if (f <= a + b) {
     cout << "Path then" << endl;
   } else {
@@ -40,6 +39,9 @@ void myFunc(double f, float a, float b) {
 int main() {
   // 0.3 as input
   myFunc(0.3, 0.15, 0.15);
+
+  // 0.3 as input
+//  myFunc(0.3, 0.150000000000000022, 0.150000000000000022);
 
   return 0;
 }

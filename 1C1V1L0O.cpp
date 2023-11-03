@@ -45,7 +45,7 @@ int main() {
 
 
   // 0.3 as input
-//  myFunc(0.3, 0.3);
+//  myFunc(0.3, 0.300000000000000044);
 
   return 0;
 }
